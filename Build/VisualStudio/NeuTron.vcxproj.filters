@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\NeuTron">
+      <UniqueIdentifier>{3204cb00-5c7b-4eac-9167-25ff4340d89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NeuTron\FNN">
+      <UniqueIdentifier>{aede18ff-9fe5-45b7-8db6-430bba09397e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NeuTron">
+      <UniqueIdentifier>{25ea2342-8776-4df6-8a48-ce3b2ed08103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NeuTron\FNN">
+      <UniqueIdentifier>{64f1e79d-24f9-4ad8-934e-718f1132bc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NeuTron\MNIST">
+      <UniqueIdentifier>{91602752-f6b4-44fe-af8b-72deac98c9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NeuTron\MNIST">
+      <UniqueIdentifier>{2ac5d8b7-3099-4215-b1df-6089461c4a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NeuTron\Platform">
+      <UniqueIdentifier>{06b19abb-abba-4910-8f7e-3578a8bb87d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\NeuTron\FNN\GenericComputingEngine.cpp">
+      <Filter>Source Files\NeuTron\FNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\NeuTron\FNN\Helper.cpp">
+      <Filter>Source Files\NeuTron\FNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\NeuTron\DataSet.cpp">
+      <Filter>Source Files\NeuTron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\NeuTron\MNIST\Converter.cpp">
+      <Filter>Source Files\NeuTron\MNIST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\TestSimple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\TestMNIST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\NeuTron\FNN\GenericComputingEngine.hpp">
+      <Filter>Header Files\NeuTron\FNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\NeuTron\FNN\Helper.hpp">
+      <Filter>Header Files\NeuTron\FNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\NeuTron\FNN\IComputingEngine.hpp">
+      <Filter>Header Files\NeuTron\FNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\NeuTron\DataSet.hpp">
+      <Filter>Header Files\NeuTron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\NeuTron\MNIST\Converter.hpp">
+      <Filter>Header Files\NeuTron\MNIST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\TestSimple.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\TestMNIST.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\NeuTron\Platform\FNN.h">
+      <Filter>Header Files\NeuTron\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\NeuTron\Platform\NN.h">
+      <Filter>Header Files\NeuTron\Platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
