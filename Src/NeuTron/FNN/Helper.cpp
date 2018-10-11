@@ -117,6 +117,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->info.pBuffer, 0, (size_t)memsize.cbInfo);
 		pNNFF->info.cbSize = memsize.cbInfo;
 		if (NULL == (pNNFF->layers.info.pBuffer = Mem::Alloc((size_t)memsize.cbLayersInfo)))
 		{
@@ -124,6 +125,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->layers.info.pBuffer, 0, (size_t)memsize.cbLayersInfo);
 		pNNFF->layers.info.cbSize = memsize.cbLayersInfo;
 		if (NULL == (pNNFF->layers.data.pBuffer = Mem::Alloc((size_t)memsize.cbLayersData)))
 		{
@@ -131,6 +133,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->layers.data.pBuffer, 0, (size_t)memsize.cbLayersData);
 		pNNFF->layers.data.cbSize = memsize.cbLayersData;
 		if (NULL == (pNNFF->links.info.pBuffer = Mem::Alloc((size_t)memsize.cbLinksInfo)))
 		{
@@ -138,6 +141,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->links.info.pBuffer, 0, (size_t)memsize.cbLinksInfo);
 		pNNFF->links.info.cbSize = memsize.cbLinksInfo;
 		if (NULL == (pNNFF->links.data.pBuffer = Mem::Alloc((size_t)memsize.cbLinksData)))
 		{
@@ -145,6 +149,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->links.data.pBuffer, 0, (size_t)memsize.cbLinksData);
 		pNNFF->links.data.cbSize = memsize.cbLinksData;
 		if (NULL == (pNNFF->inputs.info.pBuffer = Mem::Alloc((size_t)memsize.cbInputsInfo)))
 		{
@@ -152,6 +157,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->inputs.info.pBuffer, 0, (size_t)memsize.cbInputsInfo);
 		pNNFF->inputs.info.cbSize = memsize.cbInputsInfo;
 		if (NULL == (pNNFF->outputs.info.pBuffer = Mem::Alloc((size_t)memsize.cbOutputsInfo)))
 		{
@@ -159,6 +165,7 @@ Status Helper::Create(n_fnn *pNNFF, n_layers_count cLayers, const LayerDef *laye
 
 			break;
 		}
+		memset(pNNFF->outputs.info.pBuffer, 0, (size_t)memsize.cbOutputsInfo);
 		pNNFF->outputs.info.cbSize = memsize.cbOutputsInfo;
 
 		pInfo                 = (n_fnn_info *)pNNFF->info.pBuffer;

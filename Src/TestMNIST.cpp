@@ -16,17 +16,17 @@ int TestMNIST()
 	NeuTron::FNN::Helper::LayerDef         layers[] =
 	{
 //97.739998 % accuracy after 43 epochs:
-		{ 784, N_ACTIVATION_IDENTITY, 0,                 N_VAL(0.0), 0 },
-		{ 196, N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
-		{ 10,  N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
-
-//98.019997 % accuracy after 30 epochs:
 /*
 		{ 784, N_ACTIVATION_IDENTITY, 0,                 N_VAL(0.0), 0 },
 		{ 196, N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
-		{ 196, N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
 		{ 10,  N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
 */
+
+//98.019997 % accuracy after 30 epochs:
+		{ 784, N_ACTIVATION_IDENTITY, 0,                 N_VAL(0.0), 0 },
+		{ 196, N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
+		{ 196, N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
+		{ 10,  N_ACTIVATION_SIGMOID,  N_LAYER_FLAG_BIAS, N_VAL(1.0), 0 },
 
 //97.419998 % accuracy after 32 epochs:
 /*
@@ -60,7 +60,7 @@ int TestMNIST()
 		status = datasetTraining.Open("mnist_train_inputs.dat", "mnist_train_outputs.dat", 268435456, True); // 256 MB
 		status = datasetTesting.Open("mnist_test_inputs.dat", "mnist_test_outputs.dat", 268435456, True); // 256 MB
 
-		size_t cEpochs = 100;
+		size_t cEpochs = 10;
 
 		fMaxAccuracy = N_VAL(0.0);
 		for (size_t i = 0; i < cEpochs; i++)
